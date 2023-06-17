@@ -33,7 +33,7 @@ const repositories = [
   {
     id: 'django.django',
     fullName: 'django/django',
-    description: 'The Web framework for perfectionists with deadlines.',
+    description: 'The Web framework for perfectionists with \n deadlines.',
     language: 'Python',
     forksCount: 21015,
     stargazersCount: 48496,
@@ -44,7 +44,7 @@ const repositories = [
   {
     id: 'reduxjs.redux',
     fullName: 'reduxjs/redux',
-    description: 'Predictable state container for JavaScript apps',
+    description: 'Predictable state container for JavaScript \n apps',
     language: 'TypeScript',
     forksCount: 13902,
     stargazersCount: 52869,
@@ -70,6 +70,7 @@ const RepositoryList = () => {
           stargazersCount={item.stargazersCount}
           ratingAverage={item.ratingAverage}
           reviewCount={item.reviewCount}
+          ownerAvatarUrl={item.ownerAvatarUrl}
         />
        }
       // other props
