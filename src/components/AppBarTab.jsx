@@ -1,4 +1,4 @@
-import { Text, StyleSheet, Pressable } from 'react-native';
+import { Text, StyleSheet, Pressable, ScrollView } from 'react-native';
 import { Link } from "react-router-native";
 
 const styles = StyleSheet.create({
@@ -14,17 +14,20 @@ const styles = StyleSheet.create({
 
 const AppBarTab = () => {
   return (
-    <Pressable style={styles.bottom}>
-      <Link to="/">
-        <Text style={styles.text}>
-          Repositories
-        </Text>
-      </Link>
-      <Link to="/SignIn">
-        <Text style={styles.text}>
-          Sign In
-        </Text>
-      </Link>
+
+    <Pressable >
+      <ScrollView horizontal style={styles.bottom}> 
+        <Link to="/">
+          <Text style={styles.text}>
+            Repositories
+          </Text>
+        </Link>
+        <Link to="/SignIn">
+          <Text style={styles.text}>
+            Sign In
+          </Text>
+        </Link>
+      </ScrollView>
     </Pressable>
   )
 };
